@@ -42,6 +42,10 @@ public class AlertManager {
         return true;
     }
 
+    public void clearAlerts() {
+        alertLog.clear();
+    }
+
     public ArrayList<String> getAlertLog()  { return alertLog; }
     public Stack<String>     getRuleStack() { return ruleStack; }
     public int               alertCount()  { return alertLog.size(); }
